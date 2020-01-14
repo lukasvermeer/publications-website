@@ -28,10 +28,14 @@ url: http://lukasvermeer.nl # the base hostname & protocol for your site, e.g. h
 twitter_username: lukasvermeer
 github_username:  lukasvermeer
 
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+show_excerpts: true
+google_analytics: UA-105998856-2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
