@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lukas Vermeer - Blog
+title: Lukas Vermeer - Media Archive
 # email: lukas@lukasvermeer.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  This blog is a collection of things I have written in the past. I may add
+  This is a collection of things I have written in the past. I may add
   more things in the future. Writing the right words is difficult.
-baseurl: /blog # the subpath of your site, e.g. /blog
+baseurl: /media # the subpath of your site, e.g. /blog
 url: http://lukasvermeer.nl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lukasvermeer
 github_username:  lukasvermeer
