@@ -1,3 +1,3 @@
-# lukasvermeer.nl/blog
+# lukasvermeer.nl/media
 
-My blog, also redirected from lukasvermeer.nl/blog.
+My media archive.
