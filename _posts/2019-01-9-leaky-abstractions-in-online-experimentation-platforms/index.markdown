@@ -83,7 +83,7 @@ The law of leaky abstractions states that leakage is unavoidable. Nonetheless, w
 
 As a practical example, the screenshot below shows how our in-house experimentation platform at Booking.com applies automated warnings as a mitigation strategy in cases similar to the click beacon example described earlier. The infrastructure automatically monitors whether the number of metric related server requests is balanced for any metrics used in any experiment. When an instrumentation difference is detected, users viewing the experiment results are warned that there are “more data points in this variant” (because there were more server requests with any warnings at all) and that this “is bad, and the values (i.e. the number of warnings per request) are no longer comparable.” This approach helps users of all skill levels independently identify, as well as interpret, potential abstraction issues when they occur.
 
-![Booking.com’s Experiment Tool warns users about known pitfalls automatically.](https://miro.medium.com/max/1400/0*FGH9e-aFpJziDCl3)
+![Booking.com’s Experiment Tool warns users about known pitfalls automatically.]({{site.baseurl}}{% link assets/2019-01-09-leaky-abstractions-in-online-experimentation-platforms-warning.png %})
 
 _Booking.com’s Experiment Tool warns users about known pitfalls automatically._
 
