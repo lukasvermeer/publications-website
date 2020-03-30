@@ -59,7 +59,7 @@ Broken features of this kind should not make it to production often (new code an
 
 The _circuit breaker_ is an example of an automated system which is part of our safety net. It is active for the first three minutes after any new feature is released, closely monitors for any severe errors or degradations, and automatically aborts a release when significant issues are found. In some cases this happens within a second after starting the release. This means that users who are exposed to such a broken feature will likely only be affected for a single page view, drastically reducing the impact on the user experience.
 
-![Circuit Breaker stopped this experiment within a second because it unexpectedly introduced errors for 47% of users that triggered the new code-path.](https://miro.medium.com/max/2000/1*LCv-RZHjf7gb5CbhQI71NQ.png)
+![Circuit Breaker stopped this experiment within a second because it unexpectedly introduced errors for 47% of users that triggered the new code-path.]({{site.baseurl}}{% link assets/2019-02-21-moving-fast-breaking-things-and-fixing-them-as-quickly-as-possible-circuit-breaker.png %})
 
 _Circuit Breaker stopped this experiment within a second because it unexpectedly introduced errors for 47% of users that triggered the new code-path._
 
@@ -69,7 +69,7 @@ We cut corners in favor of speed in several ways. For example, we test for stati
 
 The second corner we cut is that deduplication of visitors is performed in batches of 36 seconds. This approach is imperfect and results in some visitors being double counted, but it allows us to perform the deduplication in-memory on each Kafka consumer, without the need for external storage or state synchronisation over the network. This allows the _circuit breaker_ to respond significantly faster, in some cases even before our generic monitoring tools have completely ingested the necessary data to report results to internal users.
 
-![This experiment was stopped before our generic monitoring tool ingested the necessary data to report results to internal users.](https://miro.medium.com/max/2000/1*VTLXGCX9deL9rGBogvKDFA.png)
+![This experiment was stopped before our generic monitoring tool ingested the necessary data to report results to internal users.]({{site.baseurl}}{% link assets/2019-02-21-moving-fast-breaking-things-and-fixing-them-as-quickly-as-possible-monitor.png %})
 
 _This experiment was stopped before our generic monitoring tool ingested the necessary data to report results to internal users._
 

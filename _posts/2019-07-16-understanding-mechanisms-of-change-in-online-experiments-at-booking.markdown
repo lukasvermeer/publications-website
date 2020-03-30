@@ -29,7 +29,7 @@ Cancellations due to unclarity around accommodation policies, facilities or pric
 
 We have teams working on solutions to address the pain points of customers and partners regarding cancellations. In one experiment, one such team might change the design of a page to bring more clarity to potential guests before they make a reservation, adding a text box containing an explanation of the property policies. Their goal is to make guests more aware of the prices around their trips, so that they have a lower chance of cancelling later, resulting in a reduction of the metric ‘cancellations per visitor’. We can represent such a scenario visually using a causal graph:
 
-![A graphical representation of a treatment affecting an outcome.](https://miro.medium.com/max/2000/1*3_g-mgyvvP4Xcw-N7vL5-A.png)
+![A graphical representation of a treatment affecting an outcome.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-1.png %})
 
 _A graphical representation of a treatment affecting an outcome._
 
@@ -39,7 +39,7 @@ If the only goal was to reduce cancellations, the experimenter could go ahead an
 
 We encourage teams to monitor complementary metrics that can provide additional support for their hypothesised mechanism. For the example above, as the new information is displayed in a text box, a supporting metric might be if visitors hovered on the text box or not. We can extend the causal graph to include these supplementary metrics:
 
-![A graphical representation of a treatment affecting an outcome and several complementary metrics.](https://miro.medium.com/max/2000/1*wYx9xbBkDxaPCi5U9QKZQw.png)
+![A graphical representation of a treatment affecting an outcome and several complementary metrics.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-2.png %})
 
 _A graphical representation of a treatment affecting an outcome and several complementary metrics._
 
@@ -49,7 +49,7 @@ Here the team is explicitly checking one specific mechanism which is the reducti
 
 This approach gets more complicated when the metric that will help explain the mechanism is directly related to the outcome variable, while treatment is also expected to directly affect the outcome variable. For instance, if we observed a decrease in cancellations per visitor, but the number of bookings was also reduced. Did the reduction in cancellations originate from the new feature saving customers from making bookings, most of which would have been cancelled anyway, or did it inadvertently scare off previously satisfied customers from making bookings at all? We can express this mediation scenario graphically:
 
-![A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric.](https://miro.medium.com/max/2000/1*naXENdkodngHkJA6uCOAHA.png)
+![A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-3.png %})
 
 _A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric._
 
@@ -57,7 +57,7 @@ In this case, Bookings is a direct parent of the child metric Cancellations, mea
 
 The Average Treatment Effect in this example can be broken down into two effects:
 
-![$ATE = Direct Effect + Indirect Effect$](https://miro.medium.com/max/1400/1*ONIENbrYCuJIs8wd32R3fQ.png)
+![$ATE = Direct Effect + Indirect Effect$]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-ate.png %})
 
 The Indirect Effect is the effect of treatment on cancellations via bookings and the Direct Effect is the effect of treatment on cancellations directly. A standard A/B test will only tell us the sum of these two effects (the ATE) which is a very crucial quantity. If cancellations increase beyond an amount that we can tolerate, they may not care if the increase is due to additional bookings or the treatment’s direct effect. However, in most cases, to be able to understand the mechanism and to be able to make a decision, we need to disentangle these two effects.
 
@@ -65,7 +65,7 @@ The Indirect Effect is the effect of treatment on cancellations via bookings and
 
 Another lurking problem is that of known and unknown confounder variables. In the example above, imagine some visitors are business travellers. We can extend the causal graph with one confounder (‘is visitor travelling for business’):
 
-![A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric and a confounder.](https://miro.medium.com/max/2000/1*lPqPc9z89rfFsrlA161Vgg.png)
+![A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric and a confounder.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-4.png %})
 
 _A graphical representation of a treatment affecting an outcome directly, as well as through a mediating metric and a confounder._
 
@@ -77,7 +77,7 @@ By design, we randomise the visitors so that treatment and whether a visitor is 
 
 The method we employ follows [Imai et al.](https://imai.fas.harvard.edu/research/mediationP.html). Given a set of pre-treatment confounders X, we assume the following, known as the sequential ignorability assumption
 
-![The sequential ignorability assumption.](https://miro.medium.com/max/1400/1*AcZe3drkxZ9Rhb6iGOPzpQ.png)
+![The sequential ignorability assumption.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-sia.png %})
 
 The first equation says that given a set of pre-treatment covariates X, treatment assignment T is independent of the potential outcomes and potential mediator values. The second equation says that given the same set of pre-treatment covariates X and the actual treatment value T the mediator potential outcome is independent of the potential outcome.
 
@@ -89,7 +89,7 @@ For the estimation of causal effects, we use two-stage modeling as proposed in [
 
 We simulated 100,000 data points with one pre-treatment confounder, whether a visitor is a business traveller or not, where half the visitors are randomly assigned to treatment and half to control groups and within each group, the probability of a visitor being a business traveller is 0.4. On average a business traveller makes one booking while a non-business traveller on average makes also one booking, draws coming from Poisson distributions. The treatment adds two more bookings for business travellers but doesn’t affect bookings of non-business travellers. In addition, treatment has no direct effect on cancellations; therefore, cancellations per booking stays the same for each group; 14% for business travellers and 7% for non-business travellers, drawn from binomial distributions with said probabilities.
 
-![Simulation parameters.](https://miro.medium.com/max/1400/1*mr9rcMh06OGIPQ4h9-28sQ.png)
+![Simulation parameters.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-param.png %})
 
 _Simulation parameters._
 
@@ -97,19 +97,19 @@ We can see that the treatment has no direct effect on cancellations, as the canc
 
 We can also look at the point estimates for no adjustment, adjustment in a linear regression, and two-stage model results. (Here, we assume the experiment was run for 30 days, in order to bring the point estimates down to familiar per day units.)
 
-![Direct effect of treatment on cancellations per day.](https://miro.medium.com/max/1400/1*CpNHeJuJTLoBo_eUxrcafw.png)
+![Direct effect of treatment on cancellations per day.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-results.png %})
 
 _Direct effect of treatment on cancellations per day._
 
 Next, we do a sensitivity analysis to see how robust the point estimates are to missing covariates. Data can never tell us whether we have successfully taken into account all pretreatment confounders. However, a sensitivity analysis can tell us how robust the estimates are. In our simulation data, we know there is only one pre-treatment confounder. So we expect the estimate to be quite robust when we include this variable in our models, and not robust when we omit it.
 
-![Sensitivity plot for direct effect including confounder.](https://miro.medium.com/max/1062/1*rF1il-tGCQZ1VdKNaVANFg.png)
+![Sensitivity plot for direct effect including confounder.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-sensitivity-with.png %})
 
 _Sensitivity plot for direct effect including confounder._
 
 This shows how the direct effect of the treatment on cancellations changes with the correlation of the error terms of stage 1 and stage 2 models when we include the pre-treatment covariate. Observe that even when the correlation term ρ on the x axis is at the extremes, -0.9 and 0.9, the 95 percent intervals still include 0, meaning we can never conclusively conclude that the effect is non-zero. On the other hand, when we omit the pre-treatment covariate, _business booker_, the conclusions change drastically depending on the value of ρ; as shown here:
 
-![Sensitivity plot for direct effect omitting confounder.](https://miro.medium.com/max/1036/1*lwSO5E_LbMv-0TIqYRSnsQ.png)
+![Sensitivity plot for direct effect omitting confounder.]({{site.baseurl}}{% link assets/2019-07-16-understanding-mechanisms-of-change-in-online-experiments-at-booking-sensitivity-without.png %})
 
 _Sensitivity plot for direct effect omitting confounder._
 
