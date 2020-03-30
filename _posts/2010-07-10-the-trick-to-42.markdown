@@ -1,0 +1,23 @@
+---
+layout: post
+title: "the Trick to 42"
+date: 2010-07-10
+tags: ["BI","Oracle"]
+original:
+  source_name: Wordpress
+  source_url: https://lukasvermeer.wordpress.com/2010/07/10/the-trick-to-42/
+---
+
+[Frank Buytendijk](http://www.frankbuytendijk.com/), in his book [Performance Leadership](http://www.frankbuytendijk.com/performanceleadership.htm), writes the following.
+> Most people I asked, and most sources I referred to, define an organization similarly as "a group of people that share the same goals and objectives".> 
+> 
+> [...] Working with this definition of an organization, leads you to think that stakeholders all share a set of central goals and objectives, and can be aligned in this direction. In reality, nothing could be further from the truth. In fact, many of the goals and objectives live at odds with one another. Shareholders want the highest possible shareholder value; employees look for job security and a place to build their skills and make a career; customers want a good price and a decent product or service; and suppliers want to sell as much as they can.
+He subsequently proposes an alternative definition.
+> I have adopted what I think is a better definition of what constitutes an organization: An organization is a unique collaboration of stakeholders for the purpose of realizing goals they could not achieve by themselves. The trick to performance management is not to align everyone to the same goals and objectives, but in finding ways to bridge conflicting goals and objectives.
+[caption id="" align="alignright" width="240" caption="Each his own Target"][![Shooting Range]({{site.baseurl}}{% link assets/2010-07-10-the-trick-to-42-2851261071_be4a7bf725_m.jpg %} "Each his own Target")](http://www.flickr.com/photos/lukasvermeer/2851261071/)[/caption]
+
+In my view, Frank is being modest here, this in not just the trick to [performance management](http://en.wikipedia.org/wiki/Performance_management); it is the trick (but not the answer) to [life, the universe and everything](http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker). Once you realize that not everyone wants the same things you do, the world gains quite a few interesting dimensions.
+
+So don't try to align everyone to your goals and objectives, but find ways to bridge the gaps and resolve conflicts. There is no need for everyone to agree to want the same thing, if we can find a solution where everyone can have what he or she wants.
+
+Please, feel free to disagree with me in the comments; I'm sure we can work things out, and learn a thing or two on the way. :)

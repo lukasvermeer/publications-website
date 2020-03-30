@@ -1,0 +1,31 @@
+---
+layout: post
+title: "a Free Tip"
+date: 2010-08-02
+tags: ["BI","Database","Oracle"]
+original:
+  source_name: Wordpress
+  source_url: https://lukasvermeer.wordpress.com/2010/08/02/a-free-tip/
+---
+
+A representative of a large company (which shall remain unnamed) recently called on me for some advice. They had accidentally loaded polluted data into their data warehouse and wanted to know if there was anything they could do to get rid of it. I told them that restoring their most recent backup and reloading any more recent, unpolluted data was probably the simplest solution. They concurred, but regretted to inform me that they had not made a single backup of their production system since I helped them set it up; many, many months ago.
+
+**Let me repeat that for you. Large company. Production system. No backups. Ever.**
+
+Now, you're probably thinking that is pretty silly for a large company to not have backups of a production system. Well, wait until you hear what happened next.
+
+[caption id="" align="alignright" width="240" caption="Oops..."][![Trucking accident]({{site.baseurl}}{% link assets/2010-08-02-a-free-tip-4103063366_bde78ac79a_m.jpg %} "Oops...")](http://www.flickr.com/photos/lukasvermeer/4103063366/)[/caption]
+
+A few days later, a different representative from the same company demanded to know where exactly in the documentation we had explained that they were expected to create backups of their production system. How were they supposed to know that anything could possibly go wrong? It wasn't their fault that they had not anticipated this disaster, right?
+
+Politics ... 
+
+[Seriously](http://www.google.nl/images?q=srsly).
+
+I'm glad to report that, in the end, everything worked out and everyone lived happily ever after. But for future reference, here's a free ([as in beer, not as in speech](http://en.wikipedia.org/wiki/Gratis_versus_Libre)) tip.
+
+**Backup. Your. Production. Database.**
+
+You're welcome.
+
+<span style="color:#bbb;">[Also, do not [attempt to dry your poodle in a microwave oven](http://www.snopes.com/horrors/techno/microwavedpet.asp)]</span>

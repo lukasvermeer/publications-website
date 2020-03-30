@@ -1,0 +1,19 @@
+---
+layout: post
+title: "More Pi"
+date: 2010-11-06
+tags: ["Javascript","Mathematics","Statistics"]
+original:
+  source_name: Wordpress
+  source_url: https://lukasvermeer.wordpress.com/2010/11/06/more-pi/
+---
+
+[caption id="" align="alignright" width="160" caption="Hmmm. Pie."][![Hmmm. Pie.]({{site.baseurl}}{% link assets/2010-11-06-more-pi-2994562415_280c82a9cf_m.jpg %} "Pie")](http://www.flickr.com/photos/lukasvermeer/2994562415/)[/caption]
+
+In a [previous post](http://lukasvermeer.wordpress.com/2010/05/06/estimating-pi/) I've explained how we can estimate the number Pi using [Monte Carlo Methods](http://en.wikipedia.org/wiki/Monte_Carlo_method) (basically throwing darts at a circle). I personally think this method is quite elegant, but it is not particularly efficient. It might take a very, very, very long time for it to converge to anything close to the actual number. Still, pretty awesome.
+
+This week I've compiled a simple, interactive and more visual example using the [jQuery](http://jquery.com/) library and SVG graphics. You can find it [here](http://www.xs4all.nl/~destack/projects/pi/). Let me know what you think.
+
+* * *
+
+**Update (april 2nd 2011):** Code for this project is now available on [Github](https://github.com/lukasvermeer/pi).

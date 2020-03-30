@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Future Felony"
+date: 2012-09-17
+tags: ["Artificial Intelligence","driverless car","future","science fiction"]
+original:
+  source_name: Wordpress
+  source_url: https://lukasvermeer.wordpress.com/2012/09/17/1433/
+---
+
+Written by [Arthur C. Clarke](http://en.wikipedia.org/wiki/Arthur_C._Clarke) in 1976, [Imperial Earth](http://en.wikipedia.org/wiki/Imperial_Earth) is set in faraway 2276.
+
+> As the beautiful old car cruised in almost perfect silence under the guidance of its automatic controls, Duncan tried to see something of the terrain through which he was passing. The spaceport was fifty kilometers from the city-no one had yet invented a noiseless rocket-and the four-lane highway bore a surprising amount of traffic. Duncan could count at least twenty vehicles of various types, and even though they were all moving in the same direction, the spectacle was somewhat alarming.> 
+> 
+> "I hope all those other cars are on automatic," he said anxiously.> 
+> 
+> Washington looked a little shocked. "Of course," he said "It's been a criminal offence for-oh, at least a hundred years-to drive manually on a public highway. Though we still have occasional psychopaths who kill themselves and other people."
+
+The future sounds fascinating, but I want my [Google Driverless Car](http://en.wikipedia.org/wiki/Google_driverless_car) now.
