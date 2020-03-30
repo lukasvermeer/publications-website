@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's about time I started a blog.
+title: "It's about time I started a blog."
 date: 2010-05-04
 tags: ["Meta"]
 original:
