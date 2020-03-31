@@ -23,7 +23,7 @@ title: Publications
 description: >- # this means to ignore newlines until "baseurl:"
   This is a collection of things I have written in the past. I may add
   more things in the future. Writing the right words is difficult.
-baseurl: /media # the subpath of your site, e.g. /blog
+baseurl: /publications # the subpath of your site, e.g. /blog
 url: http://lukasvermeer.nl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lukasvermeer
 github_username:  lukasvermeer
