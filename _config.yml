@@ -35,7 +35,6 @@ plugins:
   - jekyll-feed
 
 show_excerpts: false
-google_analytics: UA-105998856-2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
