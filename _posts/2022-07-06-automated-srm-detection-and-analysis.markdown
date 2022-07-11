@@ -8,7 +8,7 @@ original:
   source_url: https://vista.io/blog/automated-sample-ratio-mismatch-srm-detection-and-analysis
 ---
 
-![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.png %})
+![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.webp %})
 
 Sample Ratio Mismatch (SRM) checks can help [detect data quality issues in online experimentation](https://dl.acm.org/doi/10.1145/3292500.3330722). Not all experimentation platforms provide these checks as part of their solution. Users of these platforms must therefore manually check for SRM, or rely on additional processes—such as [checklists](https://dl.acm.org/doi/10.1109/ICSE-SEIP.2019.00009)—or automation.
 

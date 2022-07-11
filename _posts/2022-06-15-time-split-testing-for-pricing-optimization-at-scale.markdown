@@ -8,7 +8,7 @@ original:
   source_url: https://vista.io/blog/time-split-testing-for-pricing-optimization-at-scale
 ---
 
-![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.png %})
+![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.webp %})
 
 List prices, referring to the price of products and services before discounts are applied, are a powerful lever at our disposal that can immediately impact business performance. For us, the right price is the one that simultaneously supports two crucial objectives:
 

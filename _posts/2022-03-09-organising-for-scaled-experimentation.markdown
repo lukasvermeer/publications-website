@@ -8,7 +8,7 @@ original:
   source_url: https://vista.io/blog/organising-for-scaled-experimentation
 ---
 
-![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.png %})
+![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.webp %})
 
 We want to build a strong culture of experimentation at Vista, so that we can confirm that we are delivering—and continue to deliver—jaw-dropping customer value to our customers. With the [introduction of the Experimentation Hub]( {{site.baseurl}}{% post_url 2022-03-09-organising-for-scaled-experimentation %}) ), we took the first steps towards that vision.
 

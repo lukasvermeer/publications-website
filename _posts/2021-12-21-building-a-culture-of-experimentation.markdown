@@ -8,7 +8,7 @@ original:
   source_url: https://vistaprint.io/blog/building-a-culture-of-experimentation
 ---
 
-![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.png %})
+![Part of an organisational diagram showing the "Experimentation Hub" and relations to other teams]({{site.baseurl}}{% link assets/2021-12-21-experimentation-hub.webp %})
 
 
 Vista’s goal is to deliver jaw-dropping customer value to small business owners looking for design and marketing solutions. To confirm that our execution and delivery do indeed result in jaws being dropped, we have a strong desire to test the validity of every assumption and the impact of every change. Delivery is not our goal. Experimentation is also not our goal. Customer value is our goal. Experimentation is a powerful method through which we can connect delivery to value.
