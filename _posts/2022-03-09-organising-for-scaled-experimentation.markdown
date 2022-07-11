@@ -8,6 +8,8 @@ original:
   source_url: https://vista.io/blog/organising-for-scaled-experimentation
 ---
 
+*Written by Lukas Vermeer and Flavio De Souza.*
+
 We want to build a strong culture of experimentation at Vista, so that we can confirm that we are delivering—and continue to deliver—jaw-dropping customer value to our customers. With the [introduction of the Experimentation Hub]( {{site.baseurl}}{% post_url 2022-03-09-organising-for-scaled-experimentation %}) ), we took the first steps towards that vision.
 
 The Experimentation Hub is central to our strategy, but it alone is not sufficient to scale experimentation across our organisation. In this second post in our series, we will expand our scope and describe the hybrid approach we are taking to foster and support a culture of experimentation.
